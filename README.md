@@ -1,46 +1,45 @@
-# Getting Started with Create React App
+<!-- LOGO -->
+<a href="https://eth-rewards-presentation.vercel.app/">
+  <img src="./src/eth-logo.svg" alt="Logo de EthRewards" width="400">
+</a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+## Aplicación en producción
 
-## Available Scripts
+Podés ver la aplicación productiva en https://eth-rewards-presentation.vercel.app/
 
-In the project directory, you can run:
+## Instalación y Ejecución local
 
-### `npm start`
+Sigue estos pasos para correr la aplicación localmente:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Cloná el repositorio:
+   `git clone https://github.com/santiagopintus/ethrewards-redux-cra`
+2. Navegá al repositorio:
+   `cd ethrewards-redux-cra`
+3. Instalá las dependencias:
+   `npm install`
+4. Crea un archivo `.env` en la raíz del proyecto con las siguientes variables de entorno:
+   [Acá se puede obtener la API KEY gratuita de Bitquery](https://account.bitquery.io/user/api_v1/api_keys)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+NEXT_PUBLIC_API_KEY=<tu_api_key>
+NEXT_PUBLIC_API_BASE_URL=https://graphql.bitquery.io
+```
 
-### `npm test`
+5. Ejecutá el servidor de desarrollo:
+   `npm start`
+6. Dirigite a http://localhost:3000 para ver la aplicación en acción.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologías Utilizadas
 
-### `npm run build`
+- React: Librería de JavaScript para crear interfaces de usuario.
+- Redux: Para manejo de estados
+- D3.js: Librería para crear gráficos interactivos.
+- Typescript: Lenguaje de programación con tipado estático.
+- Bitquery: API de datos de Ethereum.
+- Material UI: Librería de componentes estilizados
+- Sass: Framework de CSS.
+- Vitest: Framework de pruebas unitarias.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Diseño y Desarrollo por:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Santiago Pintus
