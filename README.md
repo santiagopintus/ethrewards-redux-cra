@@ -1,11 +1,11 @@
 <!-- LOGO -->
-<a href="https://eth-rewards-presentation.vercel.app/">
+<a href="https://ethrewards-pintus.vercel.app/">
   <img src="./src/eth-logo.svg" alt="Logo de EthRewards" width="400">
 </a>
 
 ## Aplicación en producción
 
-Podés ver la aplicación productiva en https://eth-rewards-presentation.vercel.app/
+Podés ver la aplicación productiva en https://ethrewards-pintus.vercel.app/
 
 ## Instalación y Ejecución local
 
