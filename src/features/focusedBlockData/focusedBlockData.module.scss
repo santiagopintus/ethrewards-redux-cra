@@ -1,0 +1,17 @@
+.focusedBlockDataContainer {
+  padding: 16px;
+  border-radius: 8px;
+  z-index: 1;
+
+  .date,
+  .reward {
+    margin: 0;
+  }
+  .date {
+    font-size: 14px;
+  }
+  .reward {
+    font-size: 26px;
+    font-weight: bold;
+  }
+}

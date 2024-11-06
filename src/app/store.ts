@@ -1,9 +1,13 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import blocksReducer from "../features/blocks/blocksSlice";
+import themeReducer from "../features/theme/themeSlice";
+import dateSelectionReducer from "../features/dateSelection/dateSelectionSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    blocks: blocksReducer,
+    theme: themeReducer,
+    dateSelection: dateSelectionReducer,
   },
 });
 

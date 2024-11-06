@@ -1,0 +1,21 @@
+@use "../../styles/globals/mixins" as m;
+
+.heroContainer {
+  .logoContainer {
+    max-width: 100%;
+    display: block;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@include m.desktop {
+  .heroContainer {
+    .logoContainer {
+      max-width: 600px;
+    }
+  }
+}

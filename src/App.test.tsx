@@ -1,15 +1,17 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import { Provider } from 'react-redux';
-import { store } from './app/store';
-import App from './App';
+import { render } from "@testing-library/react";
+import TestProvider from "./test/TestProvider";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("Renders Hero component", () => {
   const { getByText } = render(
-    <Provider store={store}>
+    <TestProvider testPopulated>
       <App />
-    </Provider>
+    </TestProvider>
   );
 
-  expect(getByText(/learn/i)).toBeInTheDocument();
+  expect(
+    getByText(
+      /Sigue las recompensas de bloques de Ethereum en USD a lo largo del tiempo./i
+    )
+  ).toBeInTheDocument();
 });
