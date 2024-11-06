@@ -2,6 +2,11 @@
   "name": "ethrewards-redux",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "vitest"
+  },
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
@@ -9,9 +14,6 @@
     "@mui/material": "^6.1.6",
     "@mui/x-date-pickers": "^7.22.1",
     "@reduxjs/toolkit": "^1.9.7",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^14.5.2",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "d3": "^7.9.0",
@@ -22,11 +24,6 @@
     "react-scripts": "^5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [
@@ -48,8 +45,11 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.0.1",
     "@types/d3": "^7.4.3",
     "@types/node": "^18.19.64",
+    "@vitejs/plugin-react": "^4.3.3",
     "sass": "^1.80.6",
     "vitest": "^2.1.4"
   }

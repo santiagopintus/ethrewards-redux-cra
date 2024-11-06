@@ -18,11 +18,13 @@ const createMockStore = (initialState: RootState) => {
     reducer: {
       blocks: blocksReducer,
       theme: themeReducer,
-      DateSelection: dateSelectionReducer,
+      dateSelection: dateSelectionReducer,
     },
     preloadedState: initialState,
   });
 };
+
+/** This Provider is specifically for testing only */
 const TestProvider: React.FC<TestProviderProps> = ({
   testPopulated,
   children,
@@ -31,8 +33,9 @@ const TestProvider: React.FC<TestProviderProps> = ({
   const populatedState: RootState = {
     blocks: {
       value: [
-        { date: { date: "2023-01-01" }, reward: 10 },
-        { date: { date: "2023-01-02" }, reward: 15 },
+        { reward: 1000, date: { date: "2024-10-01" } },
+        { reward: 1500, date: { date: "2024-10-14" } },
+        { reward: 2000, date: { date: "2024-10-24" } },
       ] as Block[] | null,
       focusedBlock: { date: { date: "2023-01-01" }, reward: 10 },
       status: "succeeded" as "idle" | "loading" | "succeeded" | "failed",

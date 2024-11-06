@@ -52,6 +52,7 @@ const ChartContainer = () => {
       <FocusedBlockData
         reward={focusedBlock?.reward}
         date={focusedBlock?.date.date}
+        backgroundColor={isDarkMode ? "#19243f" : "#fafafa"}
       />
       <div className={s.chartContainer}>
         {blocks ? (

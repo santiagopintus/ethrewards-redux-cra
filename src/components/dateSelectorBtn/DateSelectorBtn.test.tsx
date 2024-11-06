@@ -1,8 +1,9 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import DateSelectorBtn from "./DateSelectorBtn";
+import { expect, test, vi } from "vitest";
 
 test("DateSelectorBtn calls setDateSpan with correct dates when clicked", () => {
-  const mockSetDateSpan = jest.fn();
+  const mockSetDateSpan = vi.fn();
   const sinceDate = "2023-10-01";
 
   render(
@@ -22,8 +23,9 @@ test("DateSelectorBtn calls setDateSpan with correct dates when clicked", () => 
 
   expect(mockSetDateSpan).toHaveBeenCalledWith({
     since: sinceDate,
-    till: expect.any(Date),
+    till: tillDate,
   });
+
   expect(parsedTillDate).toBeInstanceOf(Date);
   expect(mockSetDateSpan).toHaveBeenCalledTimes(1);
 });

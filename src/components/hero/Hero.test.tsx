@@ -1,7 +1,8 @@
 import { render, screen } from "@testing-library/react";
+import { expect, test } from "vitest";
 import Hero from "./Hero";
 
-test("Hero; to contain image and text", () => {
+test("Hero: to contain image and text", () => {
   render(<Hero />);
 
   // Check if the logo image is present with the correct alt text

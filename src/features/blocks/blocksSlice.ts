@@ -37,7 +37,6 @@ const blocksSlice = createSlice({
     clearBlocks(state) {
       state.value = null;
       state.status = "idle";
-      console.log("CLEARING. Status: ", state.status);
     },
   },
   extraReducers: (builder) => {
